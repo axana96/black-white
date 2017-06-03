@@ -4,6 +4,7 @@
   <% kunstwerken.forEach(function(kunstwerken){ %>
         <section id="overzicht">
             <a href=/kunstwerken/<%- kunstwerken.id %>> <img id="imghome" src="/img/<%- kunstwerken.afbeelding %>" alt="<%- kunstwerken.titel %>"></a>
+            <p id="titelKunst"><%- kunstwerken.titel %></p>
         </section>
         <% teller++;}); %>
 

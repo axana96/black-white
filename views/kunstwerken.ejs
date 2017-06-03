@@ -22,21 +22,13 @@
           <% } %>
     </div>
 
-
-    <p id="categorie">
-
-      <% for (var i = 0; i < kunstwerken.categorieen.length; i++) { %>
-        <a href="/categorieen/<%- i %>"><%- kunstwerken.categorieen[i] %></a><% if (i+1< kunstwerken.categorieen.length){ %>, <% } %>
-      <% } %>
-    </p>
-
-    <% include comment %>
-
     <nav id="footernav">
       <% for (var i = 0; i < kunstwerken.categorieen.length; i++) { %>
         <a href="/categorieen/<%- i %>"><%- kunstwerken.categorieen[i] %></a>
       <% } %>
     </nav>
+
+    <% include comment %>
 
 </section>
 
