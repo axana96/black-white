@@ -1,0 +1,24 @@
+<% include header %>
+
+<h2 id="welkeCategorie">Alle kunstwerken in de categorie <span id="spanCategorie"><%- categorieen[id] %></span></h2>
+
+  <% for (var i = 0; i < kunstwerken.length; i++) { %>
+    <% if (kunstwerken[i].categorieen.indexOf(categorieen[id]) !== -1) { %>
+      <section>
+          <h2 class="titel">
+            <a href=/kunstwerken/<%- kunstwerken[i].id %>><%- kunstwerken[i].titel %></a>
+          </h2>
+
+          <a href=/kunstwerken/<%- kunstwerken[i].id %>>  <img src="/img/<%- kunstwerken[i].afbeelding %>" alt="<%- kunstwerken[i].titel %>"></a>
+
+      </section>
+    <% } %>
+  <% } %>
+
+  <nav id="footernav">
+    <% for (var i = 0; i < categorieen.length; i++) { %>
+      <a href="/categorieen/<%- i %>"><%- categorieen[i] %></a>
+    <% } %>
+  </nav>
+
+<% include footer %>

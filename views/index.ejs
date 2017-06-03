@@ -1,0 +1,18 @@
+<% include header %>
+
+  <% var teller = 1; %>
+  <% kunstwerken.forEach(function(kunstwerken){ %>
+        <section id="overzicht">
+            <a href=/kunstwerken/<%- kunstwerken.id %>> <img id="imghome" src="/img/<%- kunstwerken.afbeelding %>" alt="<%- kunstwerken.titel %>"></a>
+        </section>
+        <% teller++;}); %>
+
+        <div class="clear"></div>
+
+        <nav id="footernav">
+          <% for (var i = 0; i < categorieen.length; i++) { %>
+            <a href="/categorieen/<%- i %>"><%- categorieen[i] %></a>
+          <% } %>
+        </nav>
+
+<% include footer %>

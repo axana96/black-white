@@ -1,0 +1,43 @@
+<% include header %>
+
+<section>
+
+    <h2 class="titel">
+      <%- kunstwerken.titel %>
+    </h2>
+    <p class="datum"><%- kunstwerken.datering %></p>
+
+
+    <img src="/img/<%- kunstwerken.afbeelding %>" alt="<%- kunstwerken.titel %>">
+
+    <div class="beschrijving">
+          <p>
+            <%- kunstwerken.beschrijving %>
+          </p>
+    </div>
+
+    <div id="carousel">
+          <% for (var j=0; j < kunstwerken.afbeeldingCarousel.length; j++) { %>
+            <img src= "/img/<%- kunstwerken.afbeeldingCarousel[j] %>">
+          <% } %>
+    </div>
+
+
+    <p id="categorie">
+
+      <% for (var i = 0; i < kunstwerken.categorieen.length; i++) { %>
+        <a href="/categorieen/<%- i %>"><%- kunstwerken.categorieen[i] %></a><% if (i+1< kunstwerken.categorieen.length){ %>, <% } %>
+      <% } %>
+    </p>
+
+    <% include comment %>
+
+    <nav id="footernav">
+      <% for (var i = 0; i < kunstwerken.categorieen.length; i++) { %>
+        <a href="/categorieen/<%- i %>"><%- kunstwerken.categorieen[i] %></a>
+      <% } %>
+    </nav>
+
+</section>
+
+<% include footer %>

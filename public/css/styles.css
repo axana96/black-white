@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+
+body {
+  font-family: helvetica;
+  width: 90%;
+  margin: 25px auto;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: white;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+p{
+  line-height: 1.5em;
+}
+
+
+#overzicht:nth-child(even){
+  transform: rotate(5deg);
+}
+
+#overzicht:nth-child(odd){
+  transform: rotate(-5deg);
+}
+
+.beschrijving p{
+  margin: 4%;
+}
+
+#carousel{
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imghome{
+  width: 80%;
+}
+
+.clear{
+  clear: both;
+}
+
+h1{
+  font-family: 'Barrio', cursive;
+  text-align: center;
+  font-size: 3.5em;
+  padding: 5%;
+  color: black;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+nav a{
+  padding: 1% 2% 3% 2%;
+  color: white;
+}
+
+nav a:hover{
+  border-bottom: 2px solid white;
+}
+
+#footernav{
+  margin: 3% 3% 3% 3%;
+  background-color: black;
+}
+
+#terugNaarHome a{
+  color: black;
+}
+
+.titel{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  color: black;
+  font-weight: 200;
+  padding: 0 0 3% 0;
+}
+
+#categorie{
+  font-weight: 800;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 2%;
+}
+
+h3 {
+  display: inline;
+}
+
+#overzicht{
+  margin: 6% 0;
+  text-align: center;
+}
+
+.datum{
+  font-size: 0.8em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 2%;
+}
+
+#welkeCategorie{
+  padding: 3% 0 0 0;
+  font-size: .8em;
+}
+
+#spanCategorie{
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  font-size: 1em;
+}
+
+#footer{
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 1%;
+  margin-top: 5%;
+}
+
+#footer a{
+  color: black;
+}
+
+#disqus_thread{
+  margin-top: 5%;
+}
+
+section{
+  margin-top: 5%;
+}
+
+@media(min-width: 900px){
+  body{
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  h1{
+    margin: 5%;
+  }
+}
