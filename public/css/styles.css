@@ -156,8 +156,39 @@ section{
   margin-top: 5%;
 }
 
+form{
+  width: 200px;
+  margin: 0 auto;
+}
+
 #gezochtOp{
   text-align: center;
+}
+
+#search{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  margin-left: 47px;
+  padding: 2%;
+  border-radius: 30px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#search:hover{
+  background-color: black;
+  color: white;
+}
+
+input[type="text"]{
+  padding: 4%;
+  border: 1px solid black;
+}
+
+input[type="text"]:focus{
+  background-color: black;
+  color: white;
 }
 
 @media(min-width: 900px){
